@@ -12,7 +12,7 @@ namespace crimes.Pages
 
         public void OnGet()
         {
-            Message = "Your application description page.";
+            Message = "This is an app with information on Chicago crimes.";
         }
     }
 }

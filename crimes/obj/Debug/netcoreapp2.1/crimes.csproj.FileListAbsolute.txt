@@ -30,3 +30,11 @@
 /home/codio/workspace/crimes/obj/Debug/netcoreapp2.1/crimes.dll
 /home/codio/workspace/crimes/obj/Debug/netcoreapp2.1/crimes.pdb
 /home/codio/workspace/crimes/obj/Debug/netcoreapp2.1/crimes.csproj.CopyComplete
+/home/codio/workspace/crimes/obj/Debug/netcoreapp2.1/Razor/Views/Connection.g.cshtml.cs
+/home/codio/workspace/crimes/obj/Debug/netcoreapp2.1/Razor/Views/AllAreas.g.cshtml.cs
+/home/codio/workspace/crimes/obj/Debug/netcoreapp2.1/Razor/Views/CrimeCodes.g.cshtml.cs
+/home/codio/workspace/crimes/obj/Debug/netcoreapp2.1/Razor/Views/CrimesTop10.g.cshtml.cs
+/home/codio/workspace/crimes/obj/Debug/netcoreapp2.1/Razor/Views/GetAreaInput.g.cshtml.cs
+/home/codio/workspace/crimes/obj/Debug/netcoreapp2.1/Razor/Views/GetYearInput.g.cshtml.cs
+/home/codio/workspace/crimes/obj/Debug/netcoreapp2.1/Razor/Views/HomicideYear.g.cshtml.cs
+/home/codio/workspace/crimes/obj/Debug/netcoreapp2.1/Razor/Views/AreasTop10.g.cshtml.cs

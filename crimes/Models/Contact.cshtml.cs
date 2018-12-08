@@ -12,7 +12,7 @@ namespace crimes.Pages
 
         public void OnGet()
         {
-            Message = "Your contact page.";
+            Message = "Contact Abdelkader Belkadi at abelka2@uic.edu";
         }
     }
 }

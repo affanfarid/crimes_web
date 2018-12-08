@@ -1,0 +1,68 @@
+@page
+@model HomicideYearModel
+@{
+  ViewData["Title"] = "Info by Homicide Year";
+}
+
+<h2>Info by Homicide Year</h2>  
+
+<br />
+Your search string: "@Model.Input"
+<br />
+<br />
+@{
+   if (@Model.EX != null)
+	 {
+		 <h3>**ERROR: @Model.EX.Message</h3>
+		 <br />
+		 <hr />
+		 <br />
+		 <br />
+	 }
+}
+
+<table class="table">  
+    <thead>  
+        <tr>   
+            <th>  
+                Year
+            </th>  
+            <th>  
+                AreaName 
+            </th>  
+            <th>
+                SecondaryDescription
+            </th>  
+            <th>    
+                Total Homicides
+
+        </tr>  
+    </thead>  
+    <tbody>  
+    
+                
+				
+    
+    
+        @foreach (var item in Model.CrimesList)  
+        {  
+            <tr>  
+                <td>  
+					@item.Year					
+                </td>  
+                <td>  
+                    @item.AreaName
+                </td>  
+                <td> 
+                    @item.SecondaryDescription
+                </td>  
+                <td>   
+                    @item.TotalHomicides
+                </td>  
+            </tr>  
+						
+						
+        }  
+    </tbody>  
+</table> 
+

@@ -1,0 +1,94 @@
+@page
+@model AreasTop10Model
+@{
+  ViewData["Title"] = "Area Information";
+}
+
+<h2>Area Information</h2>  
+
+<br />
+Your search string: "@Model.Input"
+<br />
+<br />
+@{
+   if (@Model.EX != null)
+	 {
+		 <h3>**ERROR: @Model.EX.Message</h3>
+		 <br />
+		 <hr />
+		 <br />
+		 <br />
+	 }
+}
+
+<table class="table">  
+    <thead>  
+        <tr>   
+            <th>  
+                Rank
+            </th>  
+            <th>  
+                CrimeCode  
+            </th>  
+            <th>
+                AreaNum  
+            </th>  
+            <th>
+                AreaName 
+            </th>  
+            <th>
+                Description
+            </th>  
+            <th>    
+                Occurence
+            </th>  
+            <th>  
+                PercentageTotal
+            </th>  
+            <th>
+                PercentageArrested
+
+        </tr>  
+    </thead>  
+    <tbody>  
+    
+                @{
+				   int rank = 1;
+				 }
+				
+    
+    
+        @foreach (var item in Model.CrimesList)  
+        {  
+            <tr>  
+                <td>  
+										@rank
+                </td>  
+                <td>  
+                    @item.CrimeCode
+                </td>  
+                <td>
+                    @item.AreaNum
+                </td>  
+                <td> 
+                    @item.AreaName
+                </td>  
+                <td> 
+                    @item.Description
+                </td>  
+                <td>  
+                    @item.Occurence
+                </td>  
+                <td>  
+                    @item.PercentageTotal
+                </td>  
+                <td>  
+                    @item.PercentageArrested
+                </td>  
+            </tr>  
+						
+						rank++;
+        }  
+    </tbody>  
+</table> 
+

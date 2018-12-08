@@ -1,0 +1,61 @@
+@page
+@model AllAreasModel
+@{
+  ViewData["Title"] = "Info about All Areas";
+}
+
+<h2>Info about All Areas</h2>  
+
+@{
+   if (@Model.EX != null)
+	 {
+	   <br />
+		 <br />
+		 <h3>**ERROR: @Model.EX.Message</h3>
+		 <br />
+		 <hr />
+		 <br />
+		 <br />
+	 }
+}
+
+<table class="table">  
+    <thead>  
+        <tr>  
+            <th>  
+                AreaNum
+            </th>  
+            <th>
+                AreaName
+            </th>  
+            <th>
+                TotalNumCrime
+            </th>  
+            <th>  
+                PercentageTotal
+        </tr>  
+    </thead>  
+    <tbody>  
+			
+        @foreach (var item in Model.CrimesList)  
+        {  
+            <tr>  
+                <td>  
+							 
+                    @item.AreaNum
+                </td>  
+                <td>  
+                    @item.AreaName
+                </td>  
+                <td>  
+                    @item.TotalNumCrimes
+                </td>  
+                <td>  
+                    @item.PercentageTotal
+                </td>  
+            </tr>  
+						
+						
+        }  
+    </tbody>  
+</table> 
